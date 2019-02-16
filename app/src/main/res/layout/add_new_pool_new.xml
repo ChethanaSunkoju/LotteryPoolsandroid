@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_total">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/tv_tool_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Pool"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_backward_arrow_white"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="10dp"
+        app:cardMaxElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/et_fname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:hint="Pool Name "
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:padding="14dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Pool Type"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginLeft="40dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radioLottery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" Lottery Pool"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20dp" />
+
+
+
+        <RadioButton
+            android:id="@+id/radioCustom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" Custom Pool"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="8dp"
+        app:cardMaxElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+
+
+            <TextView
+                android:id="@+id/tv_choose_member"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_weight="0.8"
+                android:text="Choose Members"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textColorHint="#747373"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical"/>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text=""/>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:text="Done and Save"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/btn_background_blue"/>
+
+
+
+</LinearLayout>

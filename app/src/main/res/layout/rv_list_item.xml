@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_firstRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:layout_marginBottom="2dp"
+        android:weightSum="7">
+
+
+        <ImageView
+            android:id="@+id/iv_first_row"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:src="@drawable/ic_remove_black_24dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_first1"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="05"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/stroke_circle"/>
+
+        <TextView
+            android:id="@+id/tv_first2"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="05"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/stroke_circle"/>
+
+        <TextView
+            android:id="@+id/tv_first3"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/stroke_circle"
+            android:gravity="center"
+            android:text="05" />
+        <TextView
+            android:id="@+id/tv_first4"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="05"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/stroke_circle"/>
+        <TextView
+            android:id="@+id/tv_first5"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="05"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/stroke_circle"/>
+        <TextView
+            android:id="@+id/tv_first6"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="05"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/solid_circle"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

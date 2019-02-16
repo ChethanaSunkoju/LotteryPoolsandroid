@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "in.mindbrick.officelotterypools"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:26.1.0'
+    }
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+
+    compile 'com.ss.bottomnavigation:bottomnavigation:1.5.2'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.volley:volley:1.1.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.github.stfalcon:smsverifycatcher:0.3.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.hbb20:ccp:2.2.3'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.wanderingcan.widget:persistentsearch:1.2.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'com.braintreepayments.api:braintree:2.0.1'
+    compile 'com.braintreepayments.api:drop-in:2.0.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'io.card:android-sdk:5.5.1'
+    compile 'com.android.support:multidex:1.0.0'
+    implementation 'com.github.stfalcon:smsverifycatcher:0.3.2'
+    /*compile files('libs/classes.jar')
+    compile files('libs/opencv library - 2.4.11.jar')*/
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    implementation 	'com.google.android.gms:play-services-vision:16.2.0'
+}

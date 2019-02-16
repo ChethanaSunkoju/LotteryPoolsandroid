@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_backward_arrow_white"/>
+
+        <TextView
+            android:id="@+id/tv_tool_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lucky Angels Pool"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="Done"
+            android:textAlignment="center"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/btn_background"/>
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#edeaea">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:text="State"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:padding="15dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/et_target_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="#ffffff"
+                    android:maxLength="12"
+                   android:text="Virginia, VA"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textColorHint="#747373"
+                    android:textSize="14sp"
+                    android:padding="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:text="Game"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:padding="15dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/sp_pool"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="#ffffff"
+                    android:textColorHint="#747373"
+                    android:text="MegaMillion"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:padding="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="Default Payment Per Draw"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:padding="15dp"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/tv_default_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:background="#ffffff"
+                    android:maxLength="12"
+                    android:hint="$0"
+                    android:singleLine="true"
+                    android:textColorHint="#747373"
+                    android:textSize="14sp"
+                    android:padding="14dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Draws"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp">
+            
+            
+            <android.support.v7.widget.CardView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="8dp"
+                app:cardMaxElevation="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="8dp"
+                android:layout_gravity="center"
+                app:cardMaxElevation="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="8dp"
+                app:cardMaxElevation="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_remove_black_24dp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="8dp"
+                app:cardMaxElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:text="StartDate"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="To"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="8dp"
+                app:cardMaxElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:text="EndDate"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
+           android:orientation="horizontal"
+           android:layout_gravity="center">
+           
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Megapiler"
+               android:textSize="16sp"
+               android:layout_gravity="center"
+               android:textColor="@color/black"/>
+
+           <Switch
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_gravity="center"/>
+
+       </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Ticket"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_scan"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.2"
+                        android:text="Scan"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_background_blue"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.2"
+                        android:text="Manual"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_background_blue"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#cecbcb">
+
+                </View>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_elements"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="gtyjkk"
+                        android:gravity="center"/>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_firstRow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:weightSum="7">
+
+
+                        <ImageView
+                            android:id="@+id/iv_first_row"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:src="@drawable/ic_remove_black_24dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_first1"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+
+                        <TextView
+                            android:id="@+id/tv_first2"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+
+                        <TextView
+                            android:id="@+id/tv_first3"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/stroke_circle"
+                            android:gravity="center"
+                            android:text="05" />
+                        <TextView
+                            android:id="@+id/tv_first4"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+                        <TextView
+                            android:id="@+id/tv_first5"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+                        <TextView
+                            android:id="@+id/tv_first6"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/solid_circle"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_secondRow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:weightSum="7">
+
+
+                        <ImageView
+                            android:id="@+id/iv_second_row"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:src="@drawable/ic_remove_black_24dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_second1"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+
+                        <TextView
+                            android:id="@+id/tv_second2"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+
+                        <TextView
+                            android:id="@+id/tv_second3"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/stroke_circle"
+                            android:gravity="center"
+                            android:text="05" />
+                        <TextView
+                            android:id="@+id/tv_second4"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+                        <TextView
+                            android:id="@+id/tv_second5"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+                        <TextView
+                            android:id="@+id/tv_second6"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/solid_circle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_thirdRow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:weightSum="7">
+
+
+                        <ImageView
+                            android:id="@+id/iv_third_row"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:src="@drawable/ic_remove_black_24dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_third1"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+
+                        <TextView
+                            android:id="@+id/tv_third2"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+
+                        <TextView
+                            android:id="@+id/tv_third3"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/stroke_circle"
+                            android:gravity="center"
+                            android:text="05" />
+                        <TextView
+                            android:id="@+id/tv_third4"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+                        <TextView
+                            android:id="@+id/tv_third5"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/stroke_circle"/>
+                        <TextView
+                            android:id="@+id/tv_third6"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:text="05"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/solid_circle"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

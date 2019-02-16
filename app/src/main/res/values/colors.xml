@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#4A148C</color>
+    <color name="colorAccent">#4A148C</color>
+    <color name="black">#000000</color>
+    <color name="grey">#8b8585</color>
+    <color name="white">#ffffff</color>
+    <color name="dialog">#f5efef</color>
+    <color name="voilet">#4A148C</color>
+    <color name="pink">#E51EAD</color>
+    <color name="light_pink">#E08CC0</color>
+    <color name="tool_bar_color">#999999</color>
+    <color name="list_item_selected_state">#F4F6F6</color>
+    <color name="list_item_normal_state">#FFFFFF</color>
+</resources>

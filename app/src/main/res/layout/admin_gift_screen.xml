@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_total">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/tv_tool_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gift For Mary"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_backward_arrow_white"/>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="Pay"
+            android:layout_gravity="end"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.3">
+
+            <RelativeLayout
+                android:id="@+id/container_with_dotted_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dotted_line_border"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:tooltipText="Add Image"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="false"
+                    android:layout_marginEnd="25dp"
+                    android:src="@drawable/plus" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardMaxElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.3"
+                                android:padding="15dp"
+                                android:text="Pool Name"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+
+                                />
+
+
+                            <TextView
+                                android:id="@+id/tv_pool_name"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:background="#ffffff"
+                                android:padding="15dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColorHint="#747373"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardMaxElevation="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_members"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.5"
+                                android:padding="15dp"
+                                android:text="Members"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+
+                                />
+
+
+                            <TextView
+                                android:id="@+id/tv_mem_num"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.5"
+                                android:background="#ffffff"
+                                android:maxLength="12"
+                                android:padding="15dp"
+                                android:singleLine="true"
+                                android:text="@string/amount"
+                                android:textColorHint="#747373"
+                                android:textSize="14sp" />
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardMaxElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.5"
+                                android:padding="15dp"
+                                android:text="Target Amount"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+
+                                />
+
+
+                            <TextView
+                                android:id="@+id/tv_target_amount"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.5"
+                                android:background="#ffffff"
+                                android:padding="15dp"
+                                android:singleLine="true"
+                                android:text="@string/amount"
+                                android:textColorHint="#747373"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="7dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardMaxElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+
+                                android:layout_weight="0.7"
+                                android:padding="15dp"
+                                android:text="Default Payment Per Member"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_default_payment"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.3"
+                                android:background="#ffffff"
+                                android:focusable="auto"
+                                android:padding="15dp"
+                                android:singleLine="true"
+                                android:text="$0"
+                                android:textColorHint="#747373"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Pool Duration"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_fromDate"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_weight="0.5"
+                            android:elevation="8dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardMaxElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_start_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center"
+                                    android:text="StartDate"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="To"
+                            android:textColor="@color/black" />
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_toDate"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_weight="0.5"
+                            android:elevation="8dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardMaxElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_end_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center"
+                                    android:text="EndDate"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Freeze pool after reaching target amount"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <Switch
+                            android:id="@+id/toggleButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="1dp"
+                            android:checked="false"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="@string/target_text"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_verify"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/btn_background_blue"
+                        android:gravity="center"
+                        android:text="Done and Save"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

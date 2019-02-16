@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeeee">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHERE ARE YOU PLAYING FROM ?"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To ensure that you get the right games, we need to verify your location"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:textStyle="normal"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/tv_verify_activation"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:text="Allow Location"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/btn_background_blue"/>
+
+
+
+</LinearLayout>

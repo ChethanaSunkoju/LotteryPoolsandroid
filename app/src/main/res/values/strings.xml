@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">OfficeLotteryPools</string>
+    <string name="launching_text">Collaborate with a pool of friends,family, or co-workers</string>
+    <string name="verify_activation">We have sent you an SMS with a 4-digit code to the number 415-815-4047</string>
+    <string name="profile_text">This is how we will send updates and contact you if you win big!</string>
+    <string name="target_text">If not selected pool members will be able to contribute until the end of the pool duration and beyond target amount</string>
+    <string name="law_text">YOU MUST BE 18 YEARS OR OLDER TO BE ELIGIBLE TO PARTICIPATE IN THE LOTTERY. ANY INELIGIBLE TICKET PLAY WILL BE  TREATED AS AN INCLAIMED PRIZE</string>
+    <string name="alert_nointernet">NUMBER CONFIRMATION</string>
+    <string name="alert_nointernet_message">Is your phone number correct? 415-815-4047</string>
+    <string name="timer_label_alert_retry">Edit</string>
+    <string name="timer_label_alert_cancel">Yes</string>
+    <string name="action_search">Search</string>
+    <string name="base_url">http://13.233.223.167:3001/</string>
+    <string name="paypal_billing_agreement">Billing Agreement</string>
+    <string name="amount">$ 0</string>
+    <string name="text_btn_exit">Exit</string>
+    <string name="text_btn_camera">Camera</string>
+    <string name="text_btn_login">Start</string>
+    <string name="text_btn_take_pic">Take Picture</string>
+    <string name="text_hint_result">Result</string>
+</resources>
